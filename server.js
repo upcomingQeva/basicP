@@ -1,14 +1,14 @@
-//实现简易HttpServer
+//Implement simple HttpServer
 var http=require('http');
 http.createServer(function(request,response){
-    //发送HTTP头部
-    //HTTP状态值：200：OK
-    //内容类型：text/plain
+    //Send HTTP header
+    //HTTP status value: 200: OK
+    //Content type: text/plain
     response.writeHead(200,{'Content-Type':'text/plain'});
     
-    //发送响应数据"hello world"
+    //Send response data "hello world"
     response.end('hello world\n');
 }).listen(8888);
 
-//终端打印如下信息
+//The terminal prints the following information
 console.log('Server runnung at http://127.0.0.1:8888/');
