@@ -1,0 +1,2 @@
+# basicP
+code practices 
